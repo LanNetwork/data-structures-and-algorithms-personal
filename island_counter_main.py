@@ -7,7 +7,8 @@ You may assume all four edges of the grid are all surrounded by water.
 from island_counter import IslandCounterClass
 
 student_answer = '''
-This problem could be solved recursively by packung passing 
+This problem could be solved recursively by packing passing the updated x,y coordinates into the functions instead
+of iterating through the grid. 
 '''
 grid_one_island = [
   ["1","1","1","1","0"],
@@ -44,5 +45,6 @@ def main():
 
 if __name__ == "__main__":
         main()
+        print(student_answer)
         
 
