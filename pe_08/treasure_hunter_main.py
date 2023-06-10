@@ -10,6 +10,18 @@ An array of size n is constructed with the following specifications:
 -Each hunter can find only one treasure.
 -A hunter cannot catch a treasure where is more than K units away from the hunter.
 
+STUDENT COMMENT:
+Althought it does not say this, I am assuming that each treasure can only be found by one hunter.
+I will implement it as such. 
+Thanks, Ian McGeoy
+
+Question 3 answer - As part of the assignment, describe how the greedy algorithms can be used with an example problem:
+    This problem is solved using a greedy algorithm that searches for a hunter, and when it finds one, it searches for the closest 
+    treasure to that hunter, starting on the left. Starting on the left means that the next hunter has not had an eligable treasure
+    taken from them if a closer one exists to the original. For example, with the second test, ['T', 'T', 'H', 'H', 'T', 'H'],
+    the first hunter (index 2) takes the first treasure (index 0), which allows the second hunter (index 3) to take the second treasure
+    (index 1). This leaves the last treasure (index 4) open to the last hunter (index 5).
+
 """
 from treasure_hunter import TreasureHunterClass
 
