@@ -31,13 +31,13 @@ def main():
     print("path for graph_one:")
     dij_one = DijkstraClass(graph_one)
     dij_one.initial_costs_parents()
-    dij_one.find_shorted_path()
+    dij_one.find_shortest_path()
     dij_one.print_path()
 
     print("path for graph_two:")
     dij_two = DijkstraClass(graph_two)
     dij_two.initial_costs_parents()
-    dij_two.find_shorted_path()
+    dij_two.find_shortest_path()
     dij_two.print_path()
 
 if __name__ == "__main__":
